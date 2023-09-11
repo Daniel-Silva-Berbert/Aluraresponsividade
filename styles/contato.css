@@ -53,5 +53,6 @@
 
     .contato__titulo{
         font-size:24px;
+        width: 30%;
     }
 }
