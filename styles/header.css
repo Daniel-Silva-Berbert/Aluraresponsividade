@@ -69,7 +69,7 @@
     .cabecalho__menu-hamburguer{
         display: none;
     }
-    
+
     .container__titulo,
     .container__titulo-negrito{
         font-family: var(--font-secundaria);
@@ -87,6 +87,15 @@
 
     .opcoes{
         display: flex;
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+
+    .opcoes__botao:checked~.lista-menu{
+        display: block;
+        width: auto;
     }
 
     .opcoes__item{
