@@ -15,7 +15,7 @@
         <header class="cabecalho">
             <div class="container">
                 <input class="container__botao" type="checkbox" id="menu">
-                <label for="menu">
+                <label class="container__rotulo" for="menu">
                     <span class="cabecalho__menu-hamburguer"></span>
                 </label>
                 <ul class="lista-menu">
@@ -47,7 +47,7 @@
 
             <ul class="opcoes">
                 <input class="opcoes__botao" type="checkbox" id="menu-opcoes">
-                <label for="menu-opcoes">
+                <label class="opcoes__rotulo" for="menu-opcoes">
                     <li class="opcoes__item">Categorias</li>
                 </label>
                 <ul class="lista-menu">
@@ -78,9 +78,17 @@
             </ul>
 
             <div class="container">
-                <a href="#"><img class="container__imagem container__imagem-favoritos" src="img/AluraBooks/Favoritos.svg" alt="Meus favoritos"></a>
-                <a href="#"><img class="container__imagem" src="img/AluraBooks/Compras.svg" alt="Carrinhos de compras"></a>
-                <a href="#"><img class="container__imagem" src="img/AluraBooks/Usuário.svg" alt="Meus perfil"></a>
+                <a href="#">
+                    <img class="container__imagem container__imagem-favoritos" src="img/AluraBooks/Favoritos.svg" alt="Meus favoritos">
+                </a>
+                <a class="container__link" href="#">
+                    <img class="container__imagem" src="img/AluraBooks/Compras.svg" alt="Carrinhos de compras">
+                    <p class="container__texto">Minha sacola</p>
+                </a>
+                <a class="container__link" href="#">
+                    <img class="container__imagem" src="img/AluraBooks/Usuário.svg" alt="Meus perfil">
+                    <p class="container__texto">Minha perfil</p>
+                </a>
             </div>
         </header>
 
@@ -93,6 +101,7 @@
         <section class="carrossel">
             <h2 class="carrossel__titulo">Novos Lançamentos</h2>
             <!-- Slider main container -->
+            <div class="carrossel__container">
             <div class="swiper">
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -134,11 +143,13 @@
                     <a class="botoes__ancora" href="#">Saiba mais</a>
                 </div>
             </div>
+        </div>
         </section>
 
         <section class="carrossel">
             <h2 class="carrossel__titulo">Mais vendidos</h2>
             <!-- Slider main container -->
+            <div class="carrossel__container">
             <div class="swiper">
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -180,6 +191,7 @@
                     <a class="botoes__ancora" href="#">Saiba mais</a>
                 </div>
             </div>
+        </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         
@@ -232,7 +244,7 @@
 
         <footer class="rodape">
             <h2 class="rodape__titulo">Grupo Alura</h2>
-            <div class="lista-rodape">
+            <div class="lista-rodape1">
                 <ul class="lista-rodape">
                     <li class="lista-rodape__titulo">Educação</li>
                     <li class="lista-rodape__item">
@@ -245,7 +257,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="lista-rodape">
+            <div class="lista-rodape1">
                 <ul class="lista-rodape">
                     <li class="lista-rodape__titulo">Educação online</li>
                     <li class="lista-rodape__item">
@@ -278,7 +290,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="lista-rodape">
+            <div class="lista-rodape1">
                 <ul class="lista-rodape">
                     <li class="lista-rodape__titulo">Comunidade</li>
                     <li class="lista-rodape__item">
